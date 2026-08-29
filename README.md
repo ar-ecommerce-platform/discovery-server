@@ -32,6 +32,10 @@ docker build -t ecom/discovery-server . && docker run --rm -p 8761:8761 ecom/dis
 
 Quality config is vendored: `gradle/quality.gradle`, `config/checkstyle/`.
 
+## Testing
+
+- **Smoke** — `DiscoveryServerApplicationTests` boots the full Eureka-server context and runs `main(...)`.
+
 ## Config
 
 | Variable | Default | Purpose |
